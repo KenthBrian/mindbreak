@@ -52,7 +52,7 @@ nav {
   font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
-  color: white;
+  color: var(--text-light);
 }
 
 .nav-logo span {
@@ -84,7 +84,7 @@ nav {
   background: var(--sage);
   padding: 0.5rem 1.2rem;
   border-radius: 50px;
-  color: var(--deep) !important;
+  color: white !important;
 }
 
 .hero {
@@ -138,7 +138,7 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(155, 89, 208, 0.15);
+  background: var(--teal);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -162,6 +162,7 @@ nav {
   line-height: 1.1;
 
   margin-bottom: 1rem;
+  color: var(--text-light);
 }
 
 .hero h1 em {
@@ -171,6 +172,7 @@ nav {
 .tagline {
   color: var(--text-muted);
   margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .hero-desc {
@@ -194,19 +196,20 @@ nav {
 
 .btn-primary {
   background: var(--sage);
-  color: var(--deep);
-}
-
-.btn-primary:hover {
-  background: var(--mist);
-}
-
-.btn-secondary {
-  border: 1px solid rgba(255,255,255,0.2);
   color: white;
 }
 
+.btn-primary:hover {
+  background: var(--gold);
+}
+
+.btn-secondary {
+  border: 1px solid var(--sage);
+  color: var(--sage);
+}
+
 .btn-secondary:hover {
+  background: var(--teal);
   border-color: var(--sage);
   color: var(--sage);
 }
@@ -498,7 +501,7 @@ nav {
   align-items: center;
   gap: 0.75rem;
   background: var(--sage);
-  color: var(--deep);
+  color: white;
   padding: 1rem 2rem;
   border-radius: 50px;
   text-decoration: none;
@@ -508,7 +511,7 @@ nav {
 }
 
 .download-btn:hover {
-  background: var(--mist);
+  background: var(--gold);
   transform: scale(1.02);
 }
 
@@ -832,6 +835,7 @@ nav {
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 1rem;
+  color: var(--text-light);
 }
 
 .page-header h1 em {
@@ -1227,6 +1231,7 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.8rem;
   font-weight: 600;
+  color: var(--text-light);
 }
 
 .footer-brand span {
