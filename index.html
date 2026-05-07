@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindBreak</title>
-
+  <title>MindPause - Pause. Reset. Restore.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Mind<span>Break</span></a>
-  <ul class="nav-links">
+  <a href="#" class="nav-logo">Mind<span>Pause</span></a>
+  <button class="nav-mobile-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="#features">Features</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#team">Team</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
     <li><a href="#download" class="nav-cta">Download</a></li>
   </ul>
 </nav>
@@ -34,7 +37,7 @@
   <div class="hero-content">
     <div class="hero-eyebrow">
       <span class="dot"></span>
-      By MindPause · Student Wellness App
+      Student Mental Wellness App
     </div>
 
     <h1>Clear your <em>mind.</em><br>Restore your <em>focus.</em></h1>
@@ -51,13 +54,138 @@
       <a href="#download" class="btn-primary">
         Download Now
       </a>
-
       <a href="#features" class="btn-secondary">
         Explore Features →
       </a>
     </div>
   </div>
 </section>
+
+<!-- FEATURES -->
+<section class="section-features" id="features">
+  <div class="section-inner">
+    <div class="section-eyebrow"><span class="dot"></span>What We Offer</div>
+    <h2 class="section-title">App Features</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌬️</div>
+        <h3>Guided Breathing</h3>
+        <p>Short 3–5 minute breathing exercises designed to calm the nervous system and restore mental clarity quickly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧘</div>
+        <h3>Mindfulness Prompts</h3>
+        <p>Quick, actionable mindfulness prompts that help students reset and refocus during study breaks.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎮</div>
+        <h3>Mini-Games</h3>
+        <p>Simple interactive mini-games designed to provide mental relaxation and a fun way to take a break.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Study Timers</h3>
+        <p>Adjustable study and breathing timers to structure work sessions and mental reset intervals.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Reminders</h3>
+        <p>Optional reminders to help students take regular breaks and maintain consistent wellness habits.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Customization</h3>
+        <p>Customizable themes and personalization options to make the experience feel more personal.</p>
+      </div>
+    </div>
+
+    <div class="feature-highlights">
+      <div class="fh-card">
+        <h4>User System</h4>
+        <p>Login system requiring name, email, and grade level. Differentiates between students and teachers with role-based access.</p>
+      </div>
+      <div class="fh-card">
+        <h4>Classroom Mode</h4>
+        <p>Teachers can access an optional classroom system to monitor student engagement.</p>
+      </div>
+      <div class="fh-card">
+        <h4>Freemium Model</h4>
+        <p>Free tier with basic features. Premium at ₱98/month for ad-free usage, more games, personalization, and offline mode.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section-mv">
+  <div class="section-inner">
+    <div class="section-eyebrow"><span class="dot"></span>Our Purpose</div>
+    <h2 class="section-title">Mission & Vision</h2>
+
+    <div class="vm-grid">
+      <div class="vm-card">
+        <div class="vm-icon">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Vision</h3>
+        <p>To become a global leader in student mental wellness technology, empowering learners to achieve their full potential with focus, resilience, and emotional balance.</p>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Mission</h3>
+        <p>To design and deliver innovative, accessible, and student-focused digital solutions that promote mental wellness, reduce stress, and restore focus. We empower learners to overcome academic challenges with clarity, balance, and confidence.</p>
+      </div>
+    </div>
+
+    <div class="values-section">
+      <h3>Our Core Values</h3>
+      <div class="values-list">
+        <div class="value-item"><span>🌿</span> Wellness</div>
+        <div class="value-item"><span>♻️</span> Accessibility</div>
+        <div class="value-item"><span>✨</span> Simplicity</div>
+        <div class="value-item"><span>🛡️</span> Reliability</div>
+        <div class="value-item"><span>📈</span> Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="section-download" id="download">
+  <div class="section-inner">
+    <div class="section-eyebrow"><span class="dot"></span>Get Started</div>
+    <h2 class="section-title">Download MindBreak</h2>
+    <p class="section-desc">Available on Android. Take your first mental break today.</p>
+
+    <div class="download-options">
+      <a href="#" class="download-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.71,13.71L14.97,15.46L11.5,12L14.97,8.54L16.71,10.29L14.93,12L16.71,13.71M5,4.5V9.5H11V4.5H5Z"/></svg>
+        Download for Android
+      </a>
+      <p class="download-free">Free to start · Premium from ₱98/month</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">Mind<span>Pause</span></div>
+    <p class="footer-tagline">" Pause. Reset. Restore. "</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="team.html">Team</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="footer-copy">MindBreak v1.0.0 · Made with 💜 for students</p>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
