@@ -5,18 +5,18 @@
 }
 
 :root {
-  --deep: #f8f6f4;
+  --deep: #f5f3f7;
   --mid: #ffffff;
-  --teal: #e8f4f0;
-  --sage: #6b9080;
-  --mist: #a4c3b2;
+  --teal: #ede6f4;
+  --sage: #9b7bb8;
+  --mist: #c4b0d9;
   --cream: #353535;
-  --warm: #f0ebe6;
-  --coral: #e07a5f;
-  --gold: #81b29a;
-  --text-light: #5c5c5c;
-  --text-muted: #7a7a7a;
-  --border: #e0ddd8;
+  --warm: #ebe5f3;
+  --coral: #b794c8;
+  --gold: #8b6fa8;
+  --text-light: #4a4a4a;
+  --text-muted: #6a6a6a;
+  --border: #e2dce8;
 }
 
 body {
@@ -122,7 +122,7 @@ nav {
   background:
     radial-gradient(
       ellipse 70% 60% at 70% 40%,
-      rgba(107, 144, 128, 0.15) 0%,
+      rgba(155, 123, 184, 0.15) 0%,
       transparent 70%
     ),
     var(--deep);
@@ -221,7 +221,7 @@ nav {
   width: 500px;
   height: 500px;
 
-  background: rgba(107, 144, 128, 0.2);
+  background: rgba(155, 123, 184, 0.2);
 
   top: -100px;
   right: 10%;
@@ -231,7 +231,7 @@ nav {
   width: 300px;
   height: 300px;
 
-  background: rgba(224, 122, 95, 0.1);
+  background: rgba(183, 148, 200, 0.12);
 
   bottom: 10%;
   left: 5%;
@@ -241,7 +241,7 @@ nav {
   width: 200px;
   height: 200px;
 
-  background: rgba(129, 178, 154, 0.15);
+  background: rgba(196, 176, 217, 0.15);
 
   top: 40%;
   right: 30%;
@@ -337,7 +337,7 @@ nav {
 .feature-card:hover {
   border-color: var(--sage);
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.15);
+  box-shadow: 0 8px 24px rgba(155, 123, 184, 0.15);
 }
 
 .feature-icon {
@@ -414,7 +414,7 @@ nav {
 
 .vm-card:hover {
   border-color: var(--sage);
-  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.15);
+  box-shadow: 0 8px 24px rgba(155, 123, 184, 0.15);
 }
 
 .vm-icon {
@@ -801,7 +801,7 @@ nav {
 .page-header .blob-1 {
   width: 400px;
   height: 400px;
-  background: rgba(107, 144, 128, 0.2);
+  background: rgba(155, 123, 184, 0.2);
   top: -100px;
   right: 10%;
 }
@@ -809,7 +809,7 @@ nav {
 .page-header .blob-2 {
   width: 250px;
   height: 250px;
-  background: rgba(224, 122, 95, 0.12);
+  background: rgba(183, 148, 200, 0.15);
   bottom: -50px;
   left: 10%;
 }
@@ -913,7 +913,7 @@ nav {
 .manager-card:hover {
   border-color: var(--sage);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.12);
+  box-shadow: 0 4px 16px rgba(155, 123, 184, 0.12);
 }
 
 .manager-card.manager-head {
@@ -971,7 +971,7 @@ nav {
 .spec-card:hover {
   border-color: var(--sage);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.12);
+  box-shadow: 0 4px 16px rgba(155, 123, 184, 0.12);
 }
 
 .spec-avatar {
@@ -1015,7 +1015,7 @@ nav {
 
 .faq-item:hover {
   border-color: var(--sage);
-  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.1);
+  box-shadow: 0 4px 16px rgba(155, 123, 184, 0.1);
 }
 
 .faq-q {
@@ -1050,7 +1050,7 @@ nav {
 .contact-card:hover {
   border-color: var(--sage);
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.12);
+  box-shadow: 0 8px 24px rgba(155, 123, 184, 0.12);
 }
 
 .contact-icon {
