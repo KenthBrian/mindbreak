@@ -5,17 +5,18 @@
 }
 
 :root {
-  --deep: #1a0a2e;
-  --mid: #2d1b4e;
-  --teal: #5b2d8e;
-  --sage: #9b59d0;
-  --mist: #c89ee8;
-  --cream: #ffffff;
-  --warm: #f5eeff;
-  --coral: #c084fc;
-  --gold: #a855f7;
-  --text-light: #e9d5ff;
-  --text-muted: #b084d4;
+  --deep: #f8f6f4;
+  --mid: #ffffff;
+  --teal: #e8f4f0;
+  --sage: #6b9080;
+  --mist: #a4c3b2;
+  --cream: #353535;
+  --warm: #f0ebe6;
+  --coral: #e07a5f;
+  --gold: #81b29a;
+  --text-light: #5c5c5c;
+  --text-muted: #7a7a7a;
+  --border: #e0ddd8;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   background: var(--deep);
   color: var(--cream);
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 nav {
@@ -39,10 +41,10 @@ nav {
 
   padding: 1.4rem 5%;
 
-  background: rgba(26, 10, 46, 0.88);
+  background: rgba(248, 246, 244, 0.92);
   backdrop-filter: blur(16px);
 
-  border-bottom: 1px solid rgba(155, 89, 208, 0.15);
+  border-bottom: 1px solid var(--border);
 }
 
 .nav-logo {
@@ -69,8 +71,13 @@ nav {
   transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: white;
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--sage);
+}
+
+.nav-links a.active {
+  font-weight: 500;
 }
 
 .nav-cta {
@@ -115,7 +122,7 @@ nav {
   background:
     radial-gradient(
       ellipse 70% 60% at 70% 40%,
-      rgba(91, 45, 142, 0.35) 0%,
+      rgba(107, 144, 128, 0.15) 0%,
       transparent 70%
     ),
     var(--deep);
@@ -214,7 +221,7 @@ nav {
   width: 500px;
   height: 500px;
 
-  background: rgba(91, 45, 142, 0.28);
+  background: rgba(107, 144, 128, 0.2);
 
   top: -100px;
   right: 10%;
@@ -224,7 +231,7 @@ nav {
   width: 300px;
   height: 300px;
 
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(224, 122, 95, 0.1);
 
   bottom: 10%;
   left: 5%;
@@ -234,7 +241,7 @@ nav {
   width: 200px;
   height: 200px;
 
-  background: rgba(192, 132, 252, 0.1);
+  background: rgba(129, 178, 154, 0.15);
 
   top: 40%;
   right: 30%;
@@ -248,7 +255,7 @@ nav {
 
   border-radius: 50%;
 
-  background: var(--sage);
+  background: var(--mist);
 
   animation: float-up 8s ease-in-out infinite;
 }
@@ -288,6 +295,15 @@ nav {
   font-size: 0.95rem;
 }
 
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--sage);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
 .section-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -313,24 +329,34 @@ nav {
   background: var(--mid);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(155, 89, 208, 0.15);
+  border: 1px solid var(--border);
   transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .feature-card:hover {
   border-color: var(--sage);
   transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.15);
 }
 
 .feature-icon {
-  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  background: var(--teal);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1rem;
+  color: var(--sage);
 }
 
 .feature-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
+  color: var(--cream);
 }
 
 .feature-card p {
@@ -347,10 +373,10 @@ nav {
 }
 
 .fh-card {
-  background: linear-gradient(135deg, var(--mid) 0%, var(--teal) 100%);
+  background: var(--mid);
   border-radius: 16px;
   padding: 1.5rem;
-  border: 1px solid rgba(155, 89, 208, 0.2);
+  border: 1px solid var(--border);
 }
 
 .fh-card h4 {
@@ -381,18 +407,20 @@ nav {
   background: var(--mid);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(155, 89, 208, 0.15);
+  border: 1px solid var(--border);
   transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .vm-card:hover {
   border-color: var(--sage);
+  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.15);
 }
 
 .vm-icon {
   width: 50px;
   height: 50px;
-  background: rgba(155, 89, 208, 0.15);
+  background: var(--teal);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -433,21 +461,22 @@ nav {
   background: var(--mid);
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
-  border: 1px solid rgba(155, 89, 208, 0.15);
+  border: 1px solid var(--border);
   font-size: 0.95rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--cream);
 }
 
-.value-item span {
-  font-size: 1.2rem;
+.value-item svg {
+  color: var(--sage);
 }
 
 /* Download Section */
 .section-download {
   padding: 6rem 5%;
-  background: linear-gradient(180deg, var(--deep) 0%, rgba(45, 27, 78, 0.8) 50%, var(--deep) 100%);
+  background: var(--warm);
   text-align: center;
 }
 
@@ -504,6 +533,7 @@ nav {
   text-decoration: none;
   color: var(--cream);
   transition: background 0.3s, transform 0.2s;
+  border: 1px solid var(--border);
 }
 
 .support-card:hover {
@@ -517,7 +547,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(155, 89, 208, 0.15);
+  background: var(--teal);
   border-radius: 10px;
   flex-shrink: 0;
   color: var(--sage);
@@ -578,6 +608,7 @@ nav {
   opacity: 0;
   transform: scale(0.95);
   transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid var(--border);
 }
 
 .modal.active {
@@ -694,7 +725,7 @@ nav {
 .nav-mobile-toggle span {
   width: 24px;
   height: 2px;
-  background: var(--cream);
+  background: var(--text-light);
   transition: 0.3s;
 }
 
@@ -770,7 +801,7 @@ nav {
 .page-header .blob-1 {
   width: 400px;
   height: 400px;
-  background: rgba(91, 45, 142, 0.25);
+  background: rgba(107, 144, 128, 0.2);
   top: -100px;
   right: 10%;
 }
@@ -778,7 +809,7 @@ nav {
 .page-header .blob-2 {
   width: 250px;
   height: 250px;
-  background: rgba(168, 85, 247, 0.15);
+  background: rgba(224, 122, 95, 0.12);
   bottom: -50px;
   left: 10%;
 }
@@ -876,16 +907,17 @@ nav {
   background: var(--mid);
   border-radius: 16px;
   transition: 0.3s;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
 }
 
 .manager-card:hover {
   border-color: var(--sage);
   transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.12);
 }
 
 .manager-card.manager-head {
-  background: linear-gradient(135deg, var(--mid) 0%, var(--teal) 100%);
+  background: var(--teal);
   border-color: var(--sage);
 }
 
@@ -893,13 +925,14 @@ nav {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--sage), var(--coral));
+  background: var(--sage);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   font-size: 1.1rem;
   flex-shrink: 0;
+  color: white;
 }
 
 .manager-info {
@@ -932,25 +965,27 @@ nav {
   background: var(--mid);
   border-radius: 12px;
   transition: 0.3s;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
 }
 
 .spec-card:hover {
   border-color: var(--sage);
   transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.12);
 }
 
 .spec-avatar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--teal);
+  background: var(--mist);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 0.9rem;
   flex-shrink: 0;
+  color: var(--cream);
 }
 
 .spec-name {
@@ -974,12 +1009,13 @@ nav {
   background: var(--mid);
   border-radius: 16px;
   padding: 1.5rem;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
   transition: 0.3s;
 }
 
 .faq-item:hover {
   border-color: var(--sage);
+  box-shadow: 0 4px 16px rgba(107, 144, 128, 0.1);
 }
 
 .faq-q {
@@ -1007,18 +1043,26 @@ nav {
   border-radius: 16px;
   padding: 1.5rem;
   text-align: center;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
   transition: 0.3s;
 }
 
 .contact-card:hover {
   border-color: var(--sage);
   transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(107, 144, 128, 0.12);
 }
 
 .contact-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  width: 56px;
+  height: 56px;
+  background: var(--teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--sage);
 }
 
 .contact-card h3 {
@@ -1042,7 +1086,7 @@ nav {
   background: var(--mid);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
 }
 
 .contact-form-section .section-title {
@@ -1078,7 +1122,7 @@ nav {
   background: var(--mid);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(155, 89, 208, 0.1);
+  border: 1px solid var(--border);
 }
 
 .legal-updated {
@@ -1136,19 +1180,15 @@ nav {
   color: var(--cream);
 }
 
-/* Dot in eyebrow */
-.dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: var(--sage);
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
 /* Section Eyebrow */
 .section-eyebrow .dot {
   vertical-align: middle;
+}
+
+/* Features Section */
+.section-features {
+  padding: 6rem 5%;
+  background: var(--warm);
 }
 
 /* Footer */
